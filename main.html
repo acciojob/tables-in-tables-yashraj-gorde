@@ -1,3 +1,4 @@
+// Nested HTML Tables
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +10,69 @@
   <body>
     <table style="width: 100%; height: 100%">
       <!-- Your code here -->
+		<tr>
+    <!-- Top-left: Nested Table 2 -->
+    <td>
+      <table border="2" cellspacing="0" cellpadding="5">
+        <tr>
+          <th colspan="2">Nested Table 2</th>
+        </tr>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>abc</td>
+          <td>def</td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- Top-right: Nested Table 1 -->
+    <td>
+      <table border="2" cellspacing="0" cellpadding="5">
+        <tr>
+          <th>Nested Table 1</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <!-- Bottom-left: Nested Table 3 -->
+    <td>
+      <table border="2" cellspacing="0" cellpadding="5">
+        <tr>
+          <th colspan="2">Nested Table 3</th>
+        </tr>
+        <tr>
+          <td><a href="#">Nested Table</a></td>
+          <td>Demo Continued</td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- Bottom-right: Nested Table 4 -->
+    <td>
+      <table border="2" cellspacing="0" cellpadding="5">
+        <tr>
+          <th>Nested Table 4</th>
+        </tr>
+        <tr>
+          <td style="background-color: black; color: white; text-align: center;"><b>HTML</b></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
     </table>
   </body>
 </html>
